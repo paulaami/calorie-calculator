@@ -1,0 +1,274 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image: linear-gradient(200deg, #24130f 10%, #212121 44%);
+  font-family: 'Jost', sans-serif;
+}
+
+.input-style {
+  padding: 1% 2%;
+}
+
+.btn-style {
+  display: block;
+  padding: 2% 3%;
+  border: 1px solid white;
+  background-color: #F29C8B;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+  opacity: .9;
+  cursor: pointer;
+  -webkit-transition: color .4s, background-color .4s;
+  transition: color .4s, background-color .4s;
+}
+
+.btn-style:hover {
+  color: #fff;
+  background-color: #b16556;
+}
+
+.container {
+  position: relative;
+  width: 100vh;
+  min-height: 100vh;
+  background-image: url("/img/joga.jpg");
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.bg-shadow {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -5;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto 0 auto;
+  border-radius: 10px;
+}
+
+.top {
+  text-align: center;
+  margin: 8% auto 6% auto;
+}
+
+.top h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #F29C8B;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 6px black;
+}
+
+.frame-box {
+  -webkit-box-shadow: 1px 1px 5px #000;
+          box-shadow: 1px 1px 5px #000;
+  padding: 6% 0 7% 0;
+}
+
+.calc {
+  font-size: 1.3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.calc select {
+  display: block;
+  width: 70%;
+  margin: 3% auto 1% auto;
+  background-color: #B3B2BA;
+  opacity: .6;
+}
+
+.calc label {
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+.calc input {
+  width: 15%;
+  margin-left: 1%;
+  border: 1px solid grey;
+  opacity: .9;
+}
+
+.calc .warning-text {
+  margin-top: 3%;
+  color: #c71717;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: none;
+}
+
+.btn-add {
+  margin: 3% auto 6% auto;
+}
+
+.add-weight, .add-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 6%;
+}
+
+.kcal-list {
+  position: relative;
+  margin: 0 auto;
+  width: 95%;
+  color: #fff;
+}
+
+.kcal-list ul {
+  padding-left: 0;
+}
+
+.kcal-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1%;
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+  font-size: 1.3rem;
+}
+
+.kcal-list li:first-child {
+  padding-bottom: 1%;
+  text-transform: uppercase;
+  color: #ddcac6;
+  text-shadow: 2px 2px 5px black;
+}
+
+.kcal-list li:first-child .kcal-result {
+  left: 41%;
+}
+
+.kcal-list li:first-child .btn-delete {
+  display: none;
+}
+
+.kcal-list .kcal-result {
+  position: absolute;
+  left: 46%;
+}
+
+.kcal-list .btn-delete {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 2% 3%;
+  text-shadow: 1px 1px 5px #000;
+  cursor: pointer;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.kcal-list .deleteBtn:hover {
+  color: #b16556;
+}
+
+.bottom {
+  color: #fff;
+  text-align: center;
+}
+
+.bottom .btn-sum {
+  margin: 7% auto 5% auto;
+}
+
+.bottom p {
+  font-size: 1.5rem;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .container {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 704px) {
+  body {
+    position: relative;
+    background-image: url("/img/joga-big.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .container {
+    background-image: none;
+  }
+  .bg-shadow {
+    background-color: transparent;
+  }
+  .bg-shadow-lg {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.78);
+    z-index: -5;
+  }
+  .top {
+    text-align: center;
+    margin: 6% auto 6% auto;
+  }
+  .top h1 {
+    font-size: 2.4rem;
+  }
+  .frame-box {
+    padding-top: 4%;
+  }
+  .calc input {
+    width: 12%;
+  }
+  .add-weight, .add-time {
+    margin-top: 4%;
+  }
+  .kcal-list li {
+    font-size: 1.5rem;
+  }
+  .kcal-list .deleteBtn {
+    font-size: 1.6rem;
+  }
+  .bottom p {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

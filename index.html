@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paulina Miłkowska</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b43780f406.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+
+
+</head>
+
+<body>
+  <div class="bg-shadow-lg"></div>
+
+  <div class="container">
+    <div class="bg-shadow"></div>
+    <div class="wrapper">
+
+      <div class="top">
+        <h1>Dziennik spalonych kalorii</h1>
+      </div>
+      <div class="frame-box">
+
+        <div class="calc">
+          <label for="activity-list">Co dziś robiłeś/łaś?</label>
+          <select id="activity-list" class="input-style">
+            <option disabled selected>Wybierz aktywność z listy</option>
+            <optgroup label="Lekka intensywność">
+              <option value="2">chodzenie w tempie 3km/h</option>
+              <option value="2">czytanie</option>
+              <option value="2.5">ćwiczenia rozciągające</option>
+              <option value="2">gotowanie</option>
+              <option value="2.5">joga</option>
+              <option value="2">kąpiel</option>
+              <option value="3">mycie naczyń</option>
+              <option value="2">nauka</option>
+              <option value="2">oglądanie TV</option>
+              <option value="1.5">praca biurowa</option>
+              <option value="3">prasowanie</option>
+              <option value="1.6">prowadzenie pojazdu</option>
+              <option value="2">prysznic</option>
+              <option value="1.4">siedzenie</option>
+              <option value="0.9">spanie</option>
+              <option value="2">szycie</option>
+              <option value="2">śpiewanie</option>
+            </optgroup>
+            <optgroup label="Umiarkowana intensywność">
+              <option value="3.3">chodzenie w tempie 5km/h</option>
+              <option value="4">grabienie</option>
+              <option value="4">gra w kręgle</option>
+              <option value="4">gra w siatkówkę</option>
+              <option value="4">jazda konna</option>
+              <option value="4">jazda na rowerze (spokojna)</option>
+              <option value="5">jazda na łyżwach</option>
+              <option value="4">łucznictwo</option>
+              <option value="3">mycie samochodu</option>
+              <option value="3">odkurzanie</option>
+              <option value="4">ogrodnictwo</option>
+              <option value="3.1">pilates</option>
+              <option value="4">pływanie (wolne)</option>
+              <option value="6">skakanie na trampolinie</option>
+              <option value="3">sprzątanie</option>
+              <option value="4">taniec (wolny)</option>
+              <option value="4">tenis stołowy</option>
+            </optgroup>
+          </select>
+
+          <div class="add-weight">
+            <label for="input-weight">Podaj swoją wagę w kg:</label>
+            <input type="number" class="input-weight input-style" min='5' max='300'>
+          </div>
+
+          <div class="add-time">
+            <label for="input-time">Czas aktywności w minutach:</label>
+            <input type="number" class="input-time input-style" min='1' max='720'>
+          </div>
+
+          <p class="warning-text"></p>
+
+        </div>
+
+        <button type="button" class="btn-add btn-style">dodaj</button>
+
+        <div class="kcal-list">
+          <ul>
+            <li>
+              <span class='activity-name'>aktywność</span><span class="kcal-result">spalone kalorie</span><button
+                class="btn-delete"><i class="far fa-trash-alt"></i></button>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+
+          <button type="button" class="btn-sum btn-style">podsumuj</button>
+          <p class='result-text'>Spaliłeś/łaś dziś łącznie <span class='kcal-sum'></span> kcal!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
