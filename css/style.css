@@ -51,7 +51,7 @@ body {
   position: relative;
   width: 100vh;
   min-height: 100vh;
-  background-image: url("/img/joga.jpg");
+  background-image: url("../img/joga.jpg");
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -227,7 +227,7 @@ body {
 @media (min-width: 704px) {
   body {
     position: relative;
-    background-image: url("/img/joga-big.jpg");
+    background-image: url("../img/joga-big.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
